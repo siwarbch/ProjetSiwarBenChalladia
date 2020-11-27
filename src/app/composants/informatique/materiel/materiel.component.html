@@ -1,0 +1,12 @@
+
+<img [src]="t.photo" >
+{{t.libelle |titlecase}}
+<span class="badge badge-pill"
+    [ngClass]="{' badge-primary ':t.hautGamme,
+    'badge badge-dark':!t.hautGamme}">
+    Prix : {{t.prix}} DT</span>
+        
+            
+
+
+
