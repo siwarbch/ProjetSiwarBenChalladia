@@ -1,5 +1,5 @@
 <h1>Détails de PC d'Id:2</h1>
-<div class="container">
+
     <div class="row">
         <div class="col-6">
         <ul class="list-group">
@@ -12,5 +12,13 @@
             <li class="list-group-item"><button type="button" class="btn btn-primary">Afficher les commentaires</button></li>
         </ul>
     </div>
+    <div class="col-6">
+        <ul>
+        <li *ngFor= "let t of materiel"> 
+        <siw-comment [comm]="t.commentaires"></siw-comment>
+       
+        </li>
+    
+       </ul>
     </div>
-</div>
+    </div>
